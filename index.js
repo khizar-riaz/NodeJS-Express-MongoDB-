@@ -1,6 +1,7 @@
-const express = require('express');
+const http = require('http');
 
-console.log("hello Bagh");
+const server = http.createServer((req,res)=>{
+    console.log('servegggr started')
+})
 
-const server = express();
-server.listen(8080);
+server.listen(8080)
